@@ -15,6 +15,36 @@
         <groupId>org.springframework.boot</groupId>
       </plugin>
       <plugin>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <configuration>
+          <rules>
+            <requireJavaVersion>
+              <version>${java.version}</version>
+            </requireJavaVersion>
+            <requireMavenVersion>
+              <version>${maven-minimal.version}</version>
+            </requireMavenVersion>
+          </rules>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <id>enforce-maven</id>
+          </execution>
+          <execution>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <id>enforce-clean</id>
+            <phase>pre-clean</phase>
+          </execution>
+        </executions>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.3.0</version>
+      </plugin>
+      <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <skip>true</skip>
@@ -162,6 +192,7 @@
     <feign.version>12.3</feign.version>
     <java.version>17</java.version>
     <main-class>io.gitlab.radio_rogal.never_retry.SpringBootAndNeverRetryApplication</main-class>
+    <maven-minimal.version>3.8.5</maven-minimal.version>
     <spring-cloud.version>2022.0.3</spring-cloud.version>
   </properties>
   <version>0.0.1-SNAPSHOT</version>
