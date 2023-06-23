@@ -1,0 +1,75 @@
+[
+  {
+    "httpRequest": {
+      "headers": {
+        "Accept": [
+          "application/vnd.github+json"
+        ],
+        "X-GitHub-Api-Version": [
+          "2022-11-28"
+        ]
+      },
+      "path": "/repos/OpenFeign/feign/contributors"
+    },
+    "httpResponse": {
+      "headers": {
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ]
+      },
+      "body": "[{\n\"login\":\"dependabot[bot]\",\n\"id\":49699333,\n\"node_id\":\"MDM6Qm90NDk2OTkzMzM=\",\n\"avatar_url\":\"https://avatars.githubusercontent.com/in/29110?v=4\",\n\"gravatar_id\":\"\",\n\"url\":\"https://api.github.com/users/dependabot%5Bbot%5D\",\n\"html_url\":\"https://github.com/apps/dependabot\",\n\"followers_url\":\"https://api.github.com/users/dependabot%5Bbot%5D/followers\",\n\"following_url\":\"https://api.github.com/users/dependabot%5Bbot%5D/following{/other_user}\",\n\"gists_url\":\"https://api.github.com/users/dependabot%5Bbot%5D/gists{/gist_id}\",\n\"starred_url\":\"https://api.github.com/users/dependabot%5Bbot%5D/starred{/owner}{/repo}\",\n\"subscriptions_url\":\"https://api.github.com/users/dependabot%5Bbot%5D/subscriptions\",\n\"organizations_url\":\"https://api.github.com/users/dependabot%5Bbot%5D/orgs\",\n\"repos_url\":\"https://api.github.com/users/dependabot%5Bbot%5D/repos\",\n\"events_url\":\"https://api.github.com/users/dependabot%5Bbot%5D/events{/privacy}\",\n\"received_events_url\":\"https://api.github.com/users/dependabot%5Bbot%5D/received_events\",\n\"type\":\"Bot\",\n\"site_admin\":false,\n\"contributions\":232\n},\n{\n\"login\":\"velo\",\n\"id\":136590,\n\"node_id\":\"MDQ6VXNlcjEzNjU5MA==\",\n\"avatar_url\":\"https://avatars.githubusercontent.com/u/136590?v=4\",\n\"gravatar_id\":\"\",\n\"url\":\"https://api.github.com/users/velo\",\n\"html_url\":\"https://github.com/velo\",\n\"followers_url\":\"https://api.github.com/users/velo/followers\",\n\"following_url\":\"https://api.github.com/users/velo/following{/other_user}\",\n\"gists_url\":\"https://api.github.com/users/velo/gists{/gist_id}\",\n\"starred_url\":\"https://api.github.com/users/velo/starred{/owner}{/repo}\",\n\"subscriptions_url\":\"https://api.github.com/users/velo/subscriptions\",\n\"organizations_url\":\"https://api.github.com/users/velo/orgs\",\n\"repos_url\":\"https://api.github.com/users/velo/repos\",\n\"events_url\":\"https://api.github.com/users/velo/events{/privacy}\",\n\"received_events_url\":\"https://api.github.com/users/velo/received_events\",\n\"type\":\"User\",\n\"site_admin\":false,\n\"contributions\":165\n}\n]"
+    }
+  },
+  {
+    "httpRequest": {
+      "headers": {
+        "Accept": [
+          "application/vnd.github+json"
+        ],
+        "X-GitHub-Api-Version": [
+          "2022-11-28"
+        ]
+      },
+      "path": "/repos/service/unavailable/contributors"
+    },
+    "httpResponse": {
+      "body": "Internal Server Error",
+      "headers": {
+        "Content-Type": [
+          "text/plain; charset=utf-8"
+        ],
+        "Retry-After": [
+          "1"
+        ]
+      },
+      "reasonPhrase": "Service Unavailable",
+      "statusCode": 503
+    }
+  },
+  {
+    "httpRequest": {
+      "headers": {
+        "Accept": [
+          "application/vnd.github+json"
+        ],
+        "X-GitHub-Api-Version": [
+          "2022-11-28"
+        ]
+      },
+      "path": "/repos/tooMany/requests/contributors"
+    },
+    "httpResponse": {
+      "body": "Cool Down",
+      "headers": {
+        "Content-Type": [
+          "text/plain; charset=utf-8"
+        ],
+        "Retry-After": [
+          "1"
+        ]
+      },
+      "reasonPhrase": "Too Many Requests",
+      "statusCode": 429
+    }
+  }
+]

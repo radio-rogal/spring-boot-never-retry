@@ -1,0 +1,26 @@
+variables:
+  MAVEN_CLI_OPTS: "--batch-mode --errors --fail-at-end --show-version -DinstallAtEnd=true -DdeployAtEnd=true"
+
+image: maven:3-openjdk-11
+
+cache:
+  paths:
+    - .m2/repository
+    - target
+
+stages:
+  - verify
+
+never-retry:
+  stage: verify
+  script:
+    - ./mvnw $MAVEN_CLI_OPTS
+  except:
+    - tags
+
+two-times:
+  stage: verify
+  script:
+    - NEVER_RETRY=true ./mvnw $MAVEN_CLI_OPTS
+  except:
+    - tags

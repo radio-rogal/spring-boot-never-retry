@@ -1,0 +1,2 @@
+${AnsiColor.BRIGHT_WHITE}${application.title} ${AnsiColor.GREEN}${application.version}${AnsiColor.WHITE}
+Powered by ${AnsiColor.BRIGHT_WHITE}Spring Boot ${AnsiColor.GREEN}${spring-boot.version}${AnsiColor.WHITE}

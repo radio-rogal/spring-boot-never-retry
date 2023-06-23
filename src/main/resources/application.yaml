@@ -1,0 +1,17 @@
+spring:
+  banner:
+    location: banner.txt
+  cloud:
+    openfeign:
+      client:
+        config:
+          github:
+            url: https://api.github.com/
+            decoder: feign.json.JsonDecoder
+            logger-level: headers
+
+logging:
+  level:
+    root: WARN
+    io.gitlab.radio_rogal.never_retry.GitHub: debug
+    org.apache.hc.client5.http.headers: debug
